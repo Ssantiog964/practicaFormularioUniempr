@@ -1,0 +1,405 @@
+/*
+paleta de colores
+#F2AC57, #BF7950, #D92D07,#401C14, #F22929 */
+
+*{
+
+    margin: 0; 
+    padding: 0;
+    font-family: "Fira_Sans";
+    box-sizing: border-box;
+    list-style: none;
+    
+}
+body{
+    height: 150vh;
+    
+
+}
+
+.container_header{
+    width:100%;
+    height: 41%;
+    background: #141414;
+    background-image: linear-gradient(10deg,#201f1f7a,#363535c9, #2e19198c),url(../img/austrian_road.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* La imagen estara en una posición estatica y se acomodara a la pagina */
+    background-position: center;
+}
+ .menu{
+    text-align: right;
+    margin-right: 0%;
+    margin-top: 1;
+    background: linear-gradient(90deg, #F2AC57 6%, #BF7950 48%, #D92D07 100%);
+ }
+
+ .menu a{
+    color:#FFFFFF;
+    text-decoration: none;
+ }
+.hr{
+
+    border-color: #FFFFFF;
+}
+ .menu > li {
+
+    display: inline-block;
+    padding: 1.2% 2.2%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    background-color: #F2AC57 ;
+    font-size: 20px;
+    margin-right: 5px;
+ }
+
+ .menu >li:hover{
+
+    background-color: #da9540;
+    border: 2px solid #cf9c5e;
+ }
+ .menu .btn_contacto{
+    background-color: #F2AC57;
+    border: 2px solid #cf9c5e;
+ }
+
+ .title{
+    text-align: center;
+    font-size: 600%;
+    margin: 10%;
+    color:antiquewhite;
+    margin-top: 90px;
+ }
+
+ .fm_contact{
+   width: 45%;
+   height: auto;
+   margin: 2% auto;
+   border: 2px solid #cf9c5e;
+   border-radius: 10px;
+   padding: 2% 1%;
+   text-align: center;
+ }
+
+ .fm_contact > hr{
+   margin-bottom: 3%;
+ }
+
+ .tittle_form{
+   margin: 2% 0;
+   text-align: center;
+ }
+
+ .select{
+  width: 80%;
+  padding: 15px 2px;
+  margin: 1%;
+  font-size: 20px;
+  background-color: #f2ac57c7;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #401C14;
+}
+
+ .fm_contact > input,label,button{
+   display: inline-block;
+   width: 80%;
+   margin: 1% 0%;
+   font-size: 22px;
+ }
+
+ .fm_contact > input,.msn{
+   padding: 10px 2px;
+   border: none;
+   border-bottom: 2px solid #401C14;
+   outline: none;
+   background-color: #f2ac57c7;
+ } 
+
+ .msn{
+   width: 80%;
+ }
+
+ .fm_contact>label{
+   text-align: left;
+   padding: 5px;
+ }
+
+ input:focus, .msn:focus{
+   border-bottom: none;
+   border-right: 3px solid #401C14;
+   background-color: #FFFFFF;
+ }
+
+ .btn_enviar,.btnRegistrar,.btnCancelar{
+   width: 30%;
+   margin-top: 3%;
+   padding: 10px 20px;
+   background-color: #D92D07;
+   border-radius: 10px;
+   font-size: 20px;
+   border: 3px solid #401C14;
+   color: #FFFFFF;
+ }
+
+ .btn_enviar:hover{
+   background-color: #ff3c11;
+   text-decoration: underline;
+   transition: .7s;
+ } 
+
+ .footer{
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: center;
+   align-items: baseline;
+   background: linear-gradient(90deg, #F2AC57 6%, #BF7950 48%, #D92D07 100%);
+  
+ }
+
+ .foot{
+   display: inline;
+   margin: 3%;
+   text-align: center;
+ }
+
+ .copy{
+   width: 30%;
+   height: auto;
+   color: #fff;
+   line-height: 40px;
+ }
+
+ .my_nets,.map{
+   width: 30%;
+   height: auto;
+ }
+
+ .title_about, .title_nets, .title_ubi{
+   color:#fff;
+   margin-bottom: 3%;
+   padding: 1%;
+ }
+
+ .social_net>li{
+   padding: 1%;
+ }
+
+ .nets{
+   width: 8%;
+ }
+
+ .foot >iframe{
+   width: 100%;
+   height: auto;
+   border: 0;
+ }
+
+ .credits{
+   width: 100%;
+   padding: 2%;
+   background: linear-gradient(90deg, #D92D07 6%, #401C14 48%, #F22929 100%);
+   text-align: right;
+   color: #fff;
+ }
+
+ .credits> a{
+   color: #fff;
+   text-decoration: none;
+ }
+
+ .card{ 
+   width: 60%;
+   margin: 5% auto;
+   border: 5px solid #bf7950d0;
+   background-color: #d97e07f3;
+   text-align: center;
+   color: #fff;
+} 
+
+.cardProf{ 
+  width: 60%;
+  margin: 5% auto;
+  border: 5px solid #bf7950d0;
+  background-color: #e27f15fa;
+  text-align: center;
+  color: #fff;
+} 
+
+ .title-card{
+   font-size: 24px;
+   padding: 2%;
+}
+.data-card, .text-mail, .text-msn{
+   font-size: 20px;
+   color: #fff;
+   padding: 1% 0;
+}
+
+.text-telefono{
+   font-size: 22px;
+   padding: 2% 0;
+}
+.btnRegistrar:hover, .btnCancelar:hover{
+   background: #F22929; 
+   text-decoration:underline;
+} 
+.alerta{
+   width: 30%;
+   height: auto; 
+   background: #da9540ec;
+   position: fixed;
+   top: calc(100vh - 65%);
+   left: calc(100vw - 65%);
+   text-align: center; 
+   border: 2px solid #402319;
+   padding: 5px;
+} 
+
+.textAlerta{
+   width: 100%;
+   margin-top: 12%;
+   margin-bottom: 10%;
+   color: aliceblue;
+   font-size: 20px; 
+}
+.btnAlerta{
+   width: 40%;
+   height: auto; 
+   margin-right: 1% ;
+   margin-bottom: 3%;
+   background: #BF7950;
+   border: none;
+   border-radius: 8px;
+   font-size: 20px;
+   color: #F2F2F2;
+   padding: 2%;
+}
+
+.is-valid{
+  border-bottom: 2px solid #15d315 !important;
+  
+}
+
+.is-invalid{
+  border-bottom: 2px solid #dd150e !important;
+  
+}
+
+/* crear un sitio responsive 
+  MEDIA QUERIES 
+    */
+@media (min-width: 768px) and (max-width:1020px){
+    .menu > li{
+      font-size: 20px;
+    }
+    .title{
+      font-size: 3.5em; /* Un em cambia según la fuente del body, 1em equivale a 16px */
+    }
+    .fm_contact{
+      width: 70%;
+    }
+    .container_header{
+    height: 25%;
+    }
+}
+/* El siguiente media que creemos tiene que concordar con el antes puesto */
+@media(min-width: 680px) and (max-width:768px){
+  .menu{
+    padding: 3%;
+  }
+  .menu > li{
+    font-size: 18px;
+    margin-bottom: 1.5%;
+  }
+  .title{
+    font-size: 3.0em;
+    margin-top: 2.0%;
+  }
+  .fm_contact{
+    width: 75%;
+  }
+  .btn_enviar,.btnRegistrar,.btnCancelar{
+    width: 35%;
+    margin-top: 2.0%;
+    padding: 8px;
+    font-size: 18px;
+  }
+  .container_header{
+    height: 20%;
+  }
+}
+@media(min-width: 580px) and (max-width: 679px){
+  .menu > li{
+    font-size: 15px;
+    padding: 2%;  
+  }
+  .title{
+    font-size: 2.5em;
+    margin-top: 2.5%;
+  }
+  .fm_contact{
+    width: 80%;
+    height: auto;
+    margin: 2% auto;
+    border: 3.5px solid;
+    border-radius: 8px;
+  }
+  .fm_contact > input,label,button{
+    font-size: 21px;
+  }
+  .btn_enviar,.btnRegistrar,.btnCancelar{
+    width: 40%; 
+    margin-top: 2.0%;
+  }
+  .container_header{
+    height: 20%;
+  }
+  .copy{
+    line-height: 30px;
+  }
+}
+/* Van a haber cambios significativos pero necesarios */
+@media(min-width:300px) and (max-width:580px){
+  .title{
+    font-size: 2.0em;
+    margin-top: 1.0%;
+  }
+  .menu{
+    text-align: right;
+    margin: 2%;
+  }
+  .menu > li{
+    display: block; /* haremos que el menu actue en bloque */
+    text-align: center;
+    padding: 1%;
+  }
+  .fm_contact{
+    width: 85%;
+    border: 3px solid;
+  }
+  .fm_contact > input,label,button{
+    font-size: 20px;
+  }
+  .btn_enviar,.btnRegistrar,.btnCancelar{
+  width: 45%;
+  margin-top: 2.5%;
+  }
+  .container_header{
+    height: 25%;
+  }
+  .footer{
+    display: block;
+    text-align: center;
+  }
+  .foot > iframe{
+    width: 90%;
+  }
+  .credits{
+    height: auto;
+    padding: 2%;
+  }
+}
